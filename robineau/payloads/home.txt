@@ -1,0 +1,139 @@
+<style>
+  /* RB-HOME-V11 : Kiaf countdown + what we do */
+  .fluid-engine:has(.rb-wrap){grid-template-rows:auto !important;}
+  .fluid-engine .fe-block:has(.rb-wrap){grid-column:1 / -1 !important;grid-row:1 / -1 !important;}
+  .rb-wrap{font-family:'Archivo',Helvetica,Arial,sans-serif;color:#000;max-width:none;margin:0;padding:0 3vw;box-sizing:border-box}
+  .rb-wrap *{box-sizing:border-box}
+  .rb-wrap h3{font-family:'Archivo',Helvetica,Arial,sans-serif !important;color:#000}
+  .rb-kiaf{display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start;padding:28px 0 60px;border-bottom:1px solid #e6e6e6}
+  .rb-kiaf-left{flex:1 1 320px;min-width:280px}
+  .rb-kiaf-right{flex:1 1 420px;min-width:280px}
+  .rb-eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;font-weight:500;margin:0 0 18px;color:#8a8a8a}
+  .rb-kiaf h2{font-size:clamp(30px,3.6vw,52px);line-height:1.02;letter-spacing:.01em;text-transform:uppercase;margin:0 0 14px}
+  .rb-kiaf-meta{font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:0;color:#3a3a3a}
+  .rb-kiaf p.rb-body{font-size:14.5px;line-height:1.75;margin:0 0 18px;max-width:62ch}
+  .rb-btn{display:inline-block;border:1px solid #000;background:transparent;color:#000;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;padding:13px 26px;text-decoration:none;transition:background .2s ease,color .2s ease}
+  .rb-btn:hover{background:#000;color:#fff}
+  .rb-count{display:flex;gap:36px;flex-wrap:wrap;margin:2px 0 26px}
+  .rb-count-i{min-width:58px}
+  .rb-count-n{display:block;font-size:clamp(26px,2.8vw,36px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+  .rb-count-l{display:block;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#8a8a8a;margin-top:9px}
+  @media(max-width:767px){.rb-count{gap:26px}}
+  .rb-do{padding:84px 0 92px;text-align:center}
+  .rb-do > h2{font-size:clamp(21px,2.4vw,30px) !important;font-weight:400 !important;font-family:'Archivo',Helvetica,Arial,sans-serif !important;letter-spacing:.3em;text-transform:uppercase;margin:0 0 10px}
+  .rb-do > .rb-rule{width:32px;height:1px;background:#000;margin:20px auto 56px}
+  .rb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;text-align:left}
+  @media(min-width:1080px){.rb-grid{grid-template-columns:repeat(3,1fr)}.rb-grid > :last-child:nth-child(3n+1){grid-column:2 / 3}}
+  .rb-card{background:#f4f4f4;padding:22px;display:flex;flex-direction:column;text-decoration:none;color:#000;transition:background .25s ease}
+  .rb-card:hover{background:#eaeaea}
+  .rb-card-img{width:100%;aspect-ratio:4/3;overflow:hidden;background:#ddd}
+  .rb-card-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+  .rb-card:hover .rb-card-img img{transform:scale(1.03)}
+  .rb-card h3{font-size:13.5px !important;font-weight:500 !important;letter-spacing:.16em;text-transform:uppercase;margin:24px 0 10px;line-height:1.5}
+  .rb-card p{font-size:13.5px;line-height:1.7;margin:0 0 22px;color:#3a3a3a;flex:1}
+  .rb-card .rb-btn{align-self:flex-start}
+  @media(max-width:767px){
+    .rb-wrap{padding:0 6vw}
+    .rb-wrap{margin-top:-58px}
+    .rb-kiaf{padding:0 0 40px;gap:28px}
+    .rb-do{padding:56px 0 64px}
+  }
+</style>
+
+<div class="rb-wrap">
+
+  <section class="rb-kiaf">
+    <div class="rb-kiaf-left">
+      <p class="rb-eyebrow">Upcoming . September 2026</p>
+      <h2>Kiaf SEOUL</h2>
+      <p class="rb-kiaf-meta">Solo show . Korea . Nina Sechko</p>
+    </div>
+    <div class="rb-kiaf-right">
+      <p class="rb-body">ROBINEAU is proud to announce its participation in Kiaf SEOUL, where the gallery will present an exclusive solo exhibition by Nina Sechko, <i>The Room of Light Preservation</i>. Marking the artist's third international presentation with ROBINEAU following Shanghai and Paris, the project reflects the gallery's ongoing commitment to Sechko's international trajectory.</p>
+      <div class="rb-count" id="rb-count">
+        <div class="rb-count-i"><span class="rb-count-n" data-c="d">--</span><span class="rb-count-l">Days</span></div>
+        <div class="rb-count-i"><span class="rb-count-n" data-c="h">--</span><span class="rb-count-l">Hours</span></div>
+        <div class="rb-count-i"><span class="rb-count-n" data-c="m">--</span><span class="rb-count-l">Minutes</span></div>
+        <div class="rb-count-i"><span class="rb-count-n" data-c="s">--</span><span class="rb-count-l">Seconds</span></div>
+      </div>
+      <a class="rb-btn" href="/kiaf">Discover the show</a>
+    </div>
+  </section>
+
+  <section class="rb-do">
+    <h2>What We Do</h2>
+    <div class="rb-rule"></div>
+
+    <div class="rb-grid">
+
+      <a class="rb-card" href="/artist-representation">
+        <div class="rb-card-img"><img src="https://images.squarespace-cdn.com/content/v1/67c76cbfe79cd7298244d5d3/e3735d75-0a7c-42d4-9572-1c0d450eb691/Nina+Sechko+Front+Profile.png?format=1000w" alt="Artist Representation" style="object-position:50% 22%"></div>
+        <h3>Artist Representation</h3>
+        <p>We represent a small number of artists over the long term, building their careers carefully and consistently.</p>
+        <span class="rb-btn">Learn more</span>
+      </a>
+
+      <a class="rb-card" href="/curated-exhibitions">
+        <div class="rb-card-img"><img src="https://cdn.jsdelivr.net/gh/FutureNYX/video-assets@main/robineau/vowa-installation.jpg" alt="Curated Exhibitions"></div>
+        <h3>Curated Exhibitions</h3>
+        <p>We curate selected exhibitions and participate in leading art fairs across strategic international locations.</p>
+        <span class="rb-btn">Learn more</span>
+      </a>
+
+      <a class="rb-card" href="/projects">
+        <div class="rb-card-img"><img src="https://static1.squarespace.com/static/67c76cbfe79cd7298244d5d3/t/6a7db763811fac5f51f2c361/1786623843738/idilliya-public-art.jpg" alt="Public Art"></div>
+        <h3>Public Art</h3>
+        <p>Commissions from developers, institutions and public space, from concept and artist selection through to fabrication and installation.</p>
+        <span class="rb-btn">Learn more</span>
+      </a>
+
+      <a class="rb-card" href="/new-page">
+        <div class="rb-card-img"><img src="https://cdn.jsdelivr.net/gh/FutureNYX/video-assets@main/robineau/valentina-artrussia.jpg" alt="Public Talks"></div>
+        <h3>Public Talks</h3>
+        <p>Through lectures, panel discussions and talks at international art fairs, ROBINEAU contributes to the broader dialogue around contemporary art.</p>
+        <span class="rb-btn">Learn more</span>
+      </a>
+
+      <a class="rb-card" href="/education">
+        <div class="rb-card-img"><img src="https://static1.squarespace.com/static/67c76cbfe79cd7298244d5d3/t/6a7bb5dbccbf2e287f78e00b/1786492380450/valentina-education.jpg" alt="Education"></div>
+        <h3>Education</h3>
+        <p>Professional training for artists, live now with Valentina. A course for collectors to have conviction navigating the art market and their own taste coming soon.</p>
+        <span class="rb-btn">Learn more</span>
+      </a>
+
+      <a class="rb-card" href="/brand-collaborations">
+        <div class="rb-card-img"><img src="https://static1.squarespace.com/static/67c76cbfe79cd7298244d5d3/t/6a7dcc385403aa5f385441d8/1786629176529/kapsula-brand-collab.jpg" alt="Brand Collaborations"></div>
+        <h3>Brand Collaborations</h3>
+        <p>We place contemporary art inside brand spaces. For Kapsula we installed work by James Jean, Nina Sechko and the Popovy Sisters across the store.</p>
+        <span class="rb-btn">Learn more</span>
+      </a>
+
+      <a class="rb-card" href="/art-expert">
+        <div class="rb-card-img"><img src="https://static1.squarespace.com/static/67c76cbfe79cd7298244d5d3/t/6a7dcc2ac40a8a6a4eafcb4a/1786629162617/artexpert-popup.jpg" alt="Art Pop-Ups"></div>
+        <h3>Art Pop-Ups</h3>
+        <p>Temporary shows placed where audiences already are. We take work outside the gallery and into the city, most recently at DEPO with Art Expert.</p>
+        <span class="rb-btn">Learn more</span>
+      </a>
+
+    </div>
+  </section>
+
+</div>
+<script>
+(function(){
+  var el=document.getElementById("rb-count"); if(!el) return;
+  var target=Date.UTC(2026,8,1,15,0,0);
+  var q=function(k){return el.querySelector("[data-c='"+k+"']")};
+  var D=q("d"),H=q("h"),M=q("m"),S=q("s");
+  function pad(n){return n<10?"0"+n:""+n}
+  function tick(){
+    var left=target-Date.now(); if(left<0) left=0;
+    var t=Math.floor(left/1000);
+    D.textContent=Math.floor(t/86400);
+    H.textContent=pad(Math.floor(t%86400/3600));
+    M.textContent=pad(Math.floor(t%3600/60));
+    S.textContent=pad(t%60);
+  }
+  tick(); setInterval(tick,1000);
+})();
+</script>
