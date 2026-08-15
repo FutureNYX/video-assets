@@ -1,0 +1,87 @@
+<style>
+  /* RB-REP-V6 : representation wording, artist practice blurbs, heading leading */
+  .fluid-engine:has(.rbp){grid-template-rows:auto !important;}
+  .fluid-engine .fe-block:has(.rbp){grid-column:1 / -1 !important;grid-row:1 / -1 !important;}
+  .rbp{font-family:'Archivo',Helvetica,Arial,sans-serif;color:#000;padding:0 3vw;box-sizing:border-box}
+  .rbp *{box-sizing:border-box}
+  .rbp h1,.rbp h2,.rbp h3{font-family:'Archivo',Helvetica,Arial,sans-serif !important;color:#000}
+  .rbp-eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;font-weight:500;margin:0 0 18px;color:#8a8a8a}
+  .rbp-hero{padding:88px 0 64px;border-bottom:1px solid #e6e6e6;text-align:center}
+  .rbp-hero h1{font-size:21px !important;font-weight:400 !important;letter-spacing:.24em;text-transform:uppercase;line-height:1.5;margin:0 0 28px}
+  .rbp-lead{font-size:15.5px;line-height:1.8;margin:0 auto 14px;max-width:62ch}
+  .rbp-body{font-size:14px;line-height:1.8;margin:0 auto 14px;max-width:62ch;color:#3a3a3a}
+  .rbp-btn{display:inline-block;border:1px solid #000;background:transparent;color:#000;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;padding:13px 26px;text-decoration:none;margin-top:12px;transition:background .2s ease,color .2s ease}
+  .rbp-btn:hover{background:#000;color:#fff}
+  .rbp-soon{display:inline-block;border:1px solid #c6c6c6;color:#8a8a8a;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;padding:13px 26px;margin-top:12px}
+  .rbp-row{display:flex;flex-wrap:wrap;gap:64px;align-items:center;padding:76px 0;border-bottom:1px solid #ececec}
+  .rbp-row:last-of-type{border-bottom:0}
+  .rbp-row.rbp-flip{flex-direction:row-reverse}
+  .rbp-row .rbp-img{flex:1 1 420px;min-width:280px}
+  .rbp-row .rbp-txt{flex:1 1 380px;min-width:280px}
+  .rbp-img img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#eee}
+  .rbp-row h2{font-size:17px !important;font-weight:400 !important;letter-spacing:.2em;text-transform:uppercase;margin:0 0 18px;line-height:1.5}
+  .rbp-row .rbp-lead,.rbp-row .rbp-body{margin-left:0;margin-right:0}
+  .rbp-sec{padding:76px 0}
+  .rbp-sec > h2{font-size:14px !important;font-weight:400 !important;letter-spacing:.32em;text-transform:uppercase;text-align:center;margin:0 0 8px;line-height:2 !important}
+  .rbp-sec > .rbp-rule{width:32px;height:1px;background:#000;margin:18px auto 0}
+  .rbp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;margin-top:48px}
+  .rbp-grid--narrow{max-width:1020px;margin-left:auto;margin-right:auto}
+  .rbp-card{background:#f4f4f4;padding:22px;display:flex;flex-direction:column;text-decoration:none;color:#000;transition:background .25s ease}
+  .rbp-card:hover{background:#eaeaea}
+  .rbp-card .rbp-ci{width:100%;aspect-ratio:4/3;overflow:hidden;background:#ddd}
+  .rbp-card .rbp-ci img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+  .rbp-card:hover .rbp-ci img{transform:scale(1.03)}
+  .rbp-card h3{font-size:13.5px !important;font-weight:500 !important;letter-spacing:.16em;text-transform:uppercase;margin:24px 0 10px;line-height:1.5}
+  .rbp-card .rbp-eyebrow{margin:22px 0 6px}
+  .rbp-card .rbp-eyebrow + h3{margin-top:0}
+  .rbp-card p{font-size:13.5px;line-height:1.7;margin:0 0 22px;color:#3a3a3a;flex:1}
+  .rbp-card .rbp-btn{align-self:flex-start;margin-top:0}
+  @media(max-width:767px){
+    .rbp{padding:0 6vw}
+    .rbp-hero{padding:56px 0 44px}
+    .rbp-hero h1{font-size:17px !important;letter-spacing:.2em}
+    .rbp-row{padding:52px 0;gap:32px}
+    .rbp-row.rbp-flip{flex-direction:row}
+    .rbp-sec{padding:52px 0}
+  }
+</style>
+<div class="rbp">
+
+  <section class="rbp-hero">
+    <p class="rbp-eyebrow">What we do</p>
+    <h1>Artist Representation</h1>
+    <p class="rbp-lead">We represent a small number of artists and manage their careers end to end: exhibitions, international fairs, placement and pricing.</p>
+    <p class="rbp-body">Representation with ROBINEAU means a full programme behind the artist: we oversee and guide production, accompany the development of their practice and career, and build visibility through solo and group exhibitions, international fairs, strategic collector placements and selected institutional relationships. We also develop opportunities for brand collaborations and special projects where relevant to the artist's trajectory. We currently represent exclusively and internationally Nina Sechko and Vowa Mank.</p>
+  </section>
+
+  <section class="rbp-sec">
+    <h2>Artists We Represent Worldwide</h2>
+    <div class="rbp-rule"></div>
+    <div class="rbp-grid rbp-grid--narrow">
+
+      <a class="rbp-card" href="/nina-sechko">
+        <div class="rbp-ci"><img src="https://images.squarespace-cdn.com/content/v1/67c76cbfe79cd7298244d5d3/e3735d75-0a7c-42d4-9572-1c0d450eb691/Nina+Sechko+Front+Profile.png?format=1200w" alt="Nina Sechko" style="object-position:50% 22%"></div>
+        <h3>Nina Sechko</h3>
+        <p>Works in oil, treating the surface with the precision of a sewing needle to build raised satin-stitch textures that carry the tactile sensation of a physical body. Her training in anatomy gives the figurative work a structural precision, and the practice extends across painting, sculpture, installation and video.</p>
+        <span class="rbp-btn">Learn more</span>
+      </a>
+
+      <a class="rbp-card" href="/vowa-mank">
+        <div class="rbp-ci"><img src="https://images.squarespace-cdn.com/content/v1/67c76cbfe79cd7298244d5d3/a6113097-7c60-489e-846b-4fac0337b952/Vowa_Mank_portrait_in_studio.JPG?format=1200w" alt="Vowa Mank"></div>
+        <h3>Vowa Mank</h3>
+        <p>Builds every image from a meticulous accumulation of minute dots of colour, an extreme pointillism in which the picture shifts between abstraction and legibility as the viewer moves closer. Works in oil on linen and on MDF panel, with frames made in vegetable-tanned leather and hand-crafted pillow forms.</p>
+        <span class="rbp-btn">Learn more</span>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="rbp-sec" style="padding-top:0">
+    <h2>Artists We Have Collaborated With</h2>
+    <div class="rbp-rule"></div>
+    <p class="rbp-body" style="text-align:center;margin-top:34px;letter-spacing:.08em;text-transform:uppercase;font-size:13px;line-height:2.15;max-width:76ch">
+      <a href="/jordy-kerwick" style="color:#000;text-decoration:none;border-bottom:1px solid #cfcfcf">Jordy Kerwick</a> &nbsp;.&nbsp; <a href="/zhou-song-artist" style="color:#000;text-decoration:none;border-bottom:1px solid #cfcfcf">Zhou Song</a> &nbsp;.&nbsp; <a href="/kebeyo-chen-artist" style="color:#000;text-decoration:none;border-bottom:1px solid #cfcfcf">Kebeyo Chen</a> &nbsp;.&nbsp; <a href="/zaim-kamaruzaman" style="color:#000;text-decoration:none;border-bottom:1px solid #cfcfcf">Zaim Kamaruzaman</a> &nbsp;.&nbsp; James Jean &nbsp;.&nbsp; Kohei Nawa &nbsp;.&nbsp; Yuji Ueda &nbsp;.&nbsp; Popovy Sisters &nbsp;.&nbsp; Fabio Dourone &nbsp;.&nbsp; Vladimir Chernyshev &nbsp;.&nbsp; Andrey Olenev &nbsp;.&nbsp; Anton Vyatkin &nbsp;.&nbsp; Victor Ponomarenko &nbsp;.&nbsp; Danya Pirogov &nbsp;.&nbsp; Anton Chumak &nbsp;.&nbsp; Bokyoung Jeong &nbsp;.&nbsp; Kang Jun Seok &nbsp;.&nbsp; Kim Hyun-Hee &nbsp;.&nbsp; Thomas Besset &nbsp;.&nbsp; Saint D &nbsp;.&nbsp; Maria Vysotskaya &nbsp;.&nbsp; Elena Zonkhoeva &nbsp;.&nbsp; Alexander Ishigenov &nbsp;.&nbsp; Sayan Ayan Baigaliyev &nbsp;.&nbsp; Varvara Silantieva &nbsp;.&nbsp; Elena Gridnevskaya &nbsp;.&nbsp; Evgeniya Dudnikova &nbsp;.&nbsp; Daria Pasechnik &nbsp;.&nbsp; Pavel Bilan &nbsp;.&nbsp; Slavoy Nesterov &nbsp;.&nbsp; Alexey Rumin &nbsp;.&nbsp; Ian Sur &nbsp;.&nbsp; The Monks of the Datsan Gunzechoyney
+    </p>
+  </section>
+
+</div>

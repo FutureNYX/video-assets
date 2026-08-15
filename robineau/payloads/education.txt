@@ -1,0 +1,81 @@
+<style>
+  /* RB-EDU-V4 : close desktop gap, new For Artists portrait */
+  .fluid-engine:has(.rbp){grid-template-rows:auto !important;}
+  .fluid-engine .fe-block:has(.rbp){grid-column:1 / -1 !important;grid-row:1 / -1 !important;}
+  .rbp{font-family:'Archivo',Helvetica,Arial,sans-serif;color:#000;padding:0 3vw;box-sizing:border-box}
+  .rbp *{box-sizing:border-box}
+  .rbp h1,.rbp h2,.rbp h3{font-family:'Archivo',Helvetica,Arial,sans-serif !important;color:#000}
+  .rbp-eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;font-weight:500;margin:0 0 18px;color:#8a8a8a}
+  .rbp-hero{padding:88px 0 64px;border-bottom:1px solid #e6e6e6;text-align:center}
+  .rbp-hero h1{font-size:21px !important;font-weight:400 !important;letter-spacing:.24em;text-transform:uppercase;line-height:1.5;margin:0 0 28px}
+  .rbp-lead{font-size:15.5px;line-height:1.8;margin:0 auto 14px;max-width:62ch}
+  .rbp-body{font-size:14px;line-height:1.8;margin:0 auto 14px;max-width:62ch;color:#3a3a3a}
+  .rbp-btn{display:inline-block;border:1px solid #000;background:transparent;color:#000;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;padding:13px 26px;text-decoration:none;margin-top:12px;transition:background .2s ease,color .2s ease}
+  .rbp-btn:hover{background:#000;color:#fff}
+  .rbp-soon{display:inline-block;border:1px solid #c6c6c6;color:#8a8a8a;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;padding:13px 26px;margin-top:12px}
+  .rbp-row{display:flex;flex-wrap:wrap;gap:64px;align-items:center;padding:76px 0;border-bottom:1px solid #ececec}
+  .rbp-row:last-of-type{border-bottom:0;padding-bottom:24px}
+  .rbp-row.rbp-flip{flex-direction:row-reverse}
+  .rbp-row .rbp-img{flex:1 1 420px;min-width:280px}
+  .rbp-row .rbp-txt{flex:1 1 380px;min-width:280px}
+  .rbp-img img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#eee}
+  .rbp-row--artists .rbp-img{flex:0 1 380px}
+  .rbp-row--artists .rbp-img img{aspect-ratio:4/5;object-position:50% 22%}
+  .rbp-row h2{font-size:17px !important;font-weight:400 !important;letter-spacing:.2em;text-transform:uppercase;margin:0 0 18px;line-height:1.5}
+  .rbp-row .rbp-lead,.rbp-row .rbp-body{margin-left:0;margin-right:0}
+  .rbp-sec{padding:76px 0}
+  .rbp-sec > h2{font-size:14px !important;font-weight:400 !important;letter-spacing:.32em;text-transform:uppercase;text-align:center;margin:0 0 8px}
+  .rbp-sec > .rbp-rule{width:32px;height:1px;background:#000;margin:18px auto 0}
+  .rbp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;margin-top:48px}
+  .rbp-grid--narrow{max-width:1020px;margin-left:auto;margin-right:auto}
+  .rbp-card{background:#f4f4f4;padding:22px;display:flex;flex-direction:column;text-decoration:none;color:#000;transition:background .25s ease}
+  .rbp-card:hover{background:#eaeaea}
+  .rbp-card .rbp-ci{width:100%;aspect-ratio:4/3;overflow:hidden;background:#ddd}
+  .rbp-card .rbp-ci img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+  .rbp-card:hover .rbp-ci img{transform:scale(1.03)}
+  .rbp-card h3{font-size:13.5px !important;font-weight:500 !important;letter-spacing:.16em;text-transform:uppercase;margin:24px 0 10px;line-height:1.5}
+  .rbp-card .rbp-eyebrow{margin:22px 0 6px}
+  .rbp-card .rbp-eyebrow + h3{margin-top:0}
+  .rbp-card p{font-size:13.5px;line-height:1.7;margin:0 0 22px;color:#3a3a3a;flex:1}
+  .rbp-card .rbp-btn{align-self:flex-start;margin-top:0}
+  @media(max-width:767px){
+    .rbp{padding:0 6vw}
+    .rbp-hero{padding:56px 0 44px}
+    .rbp-hero h1{font-size:17px !important;letter-spacing:.2em}
+    .rbp-row{padding:52px 0;gap:32px}
+    .rbp-row.rbp-flip{flex-direction:row}
+    .rbp-sec{padding:52px 0}
+  }
+</style>
+<div class="rbp">
+
+  <section class="rbp-hero">
+    <p class="rbp-eyebrow">What we do</p>
+    <h1>Education</h1>
+    <p class="rbp-lead">We run two education programmes: professional training for artists, and a collector's course on navigating the art market.</p>
+    <p class="rbp-body">The artist programme is led by gallery co-founder Valentina ROBINEAU and runs now, with lessons, critiques and open calls throughout the year. The collector's course opens soon, built on the research behind our Collector's Intelligence notes.</p>
+  </section>
+
+  <section class="rbp-row rbp-row--artists">
+    <div class="rbp-img"><img src="https://cdn.jsdelivr.net/gh/FutureNYX/video-assets@main/robineau/valentina-for-artists.jpg" alt="ROBINEAU Education"></div>
+    <div class="rbp-txt">
+      <p class="rbp-eyebrow">Live now</p>
+      <h2>For Artists</h2>
+      <p class="rbp-body">Led by Valentina ROBINEAU, the programme covers the professional side of an artist's career: presenting your work, building a coherent body of work, and working with galleries, fairs and collectors. Lessons, critiques and open calls run continuously.</p>
+      <a class="rbp-btn" href="https://education.robineauart.ru/landing" target="_blank" rel="noopener">View the course</a>
+        <a class="rbp-btn" href="https://www.instagram.com/robineau.education/" target="_blank" rel="noopener">Course Instagram</a>
+      &nbsp;&nbsp;<a class="rbp-btn" href="mailto:valentina@robineauart.com?subject=Course%20enquiry">Course enquiry</a>
+    </div>
+  </section>
+
+  <section class="rbp-row rbp-flip">
+    <div class="rbp-img"><img src="https://images.squarespace-cdn.com/content/v1/67c76cbfe79cd7298244d5d3/27ef75e6-157d-41fd-ac71-ab9761069b73/IMG_0650.WEBP?format=1200w" alt="Collector education"></div>
+    <div class="rbp-txt">
+      <p class="rbp-eyebrow">Coming soon</p>
+      <h2>For Collectors</h2>
+      <p class="rbp-body">A course for collectors to gain conviction navigating the art market and their own taste: reading an artist's trajectory, understanding how prices are formed, and buying with confidence. Built on the research behind our Collector's Intelligence notes.</p>
+      <span class="rbp-soon">Coming soon</span>
+    </div>
+  </section>
+
+</div>
