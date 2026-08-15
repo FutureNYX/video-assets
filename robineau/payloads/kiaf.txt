@@ -1,5 +1,9 @@
 <style>
-  /* RB-KIAF-V6 : mobile gaps closed, preview-sheet button padding, closing enquiry button */
+  /* RB-KIAF-V7 : mobile gaps closed, preview-sheet button padding, closing enquiry button */
+
+  /* pull quotes: the attribution was landing on the last line of the quote */
+  .list-item-content__title{margin-bottom:18px !important}
+  .list-item-content__description p{margin-top:0 !important}
   .rb-cat a{display:inline-block;border:1px solid #000;color:#000;font-family:'Archivo',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;padding:13px 26px;text-decoration:none;transition:background .2s ease,color .2s ease}
   .rb-cat a:hover{background:#000;color:#fff}
 
@@ -31,9 +35,9 @@
        concept text, so let the rows size to their content instead. */
     .fe-6a20a1c078c858261cac441d{grid-template-rows:auto !important}
     .fe-block-yui_3_17_2_1_1786355774294_4001{grid-row:1 / 4 !important}
-    .fe-block-yui_3_17_2_1_1780525796775_2587{grid-row:4 / 6 !important}
-    .fe-block-ea27c97067a62fafe279{grid-row:6 / 7 !important}
-    .fe-block-956b4c1507e0d3de563a{grid-row:8 / 20 !important}
+    .fe-block-yui_3_17_2_1_1780525796775_2587{grid-row:4 / 6 !important;margin-top:10px}
+    .fe-block-ea27c97067a62fafe279{grid-row:6 / 7 !important;margin-top:10px}
+    .fe-block-956b4c1507e0d3de563a{grid-row:8 / 20 !important;margin-top:18px;margin-bottom:24px}
 
     /* work section: title, specs, image, concept, button each on their own rows */
     .fe-block-yui_3_17_2_1_1780529990468_6490{grid-row:6 / 12 !important}
