@@ -1,5 +1,5 @@
-<style>
-  /* RB-HOME-V11 : Kiaf countdown + what we do */
+﻿<style>
+  /* RB-HOME-V12 : Kiaf countdown + what we do */
   .fluid-engine:has(.rb-wrap){grid-template-rows:auto !important;}
   .fluid-engine .fe-block:has(.rb-wrap){grid-column:1 / -1 !important;grid-row:1 / -1 !important;}
   .rb-wrap{font-family:'Archivo',Helvetica,Arial,sans-serif;color:#000;max-width:none;margin:0;padding:0 3vw;box-sizing:border-box}
@@ -34,7 +34,7 @@
   .rb-card .rb-btn{align-self:flex-start}
   @media(max-width:767px){
     .rb-wrap{padding:0 6vw}
-    .rb-wrap{margin-top:-58px}
+    .rb-wrap{margin-top:0}
     .rb-kiaf{padding:0 0 40px;gap:28px}
     .rb-do{padding:56px 0 64px}
   }
