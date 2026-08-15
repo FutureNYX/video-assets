@@ -1,5 +1,5 @@
 <style>
-  /* RB-KIAF-V4 : mobile gaps closed, preview-sheet button padding, closing enquiry button */
+  /* RB-KIAF-V5 : mobile gaps closed, preview-sheet button padding, closing enquiry button */
   .rb-cat a{display:inline-block;border:1px solid #000;color:#000;font-family:'Archivo',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;padding:13px 26px;text-decoration:none;transition:background .2s ease,color .2s ease}
   .rb-cat a:hover{background:#000;color:#fff}
 
@@ -16,7 +16,7 @@
   #block-b17596e8398f85368277 .sqs-block-button-element{padding-top:15px !important;padding-bottom:15px !important;height:auto !important;line-height:1.35 !important}
 
   /* closing catalogue enquiry, mirroring the one at the top of the page */
-  .rb-cat-end{padding:8px 0 64px;text-align:center}
+  .rb-cat-end{position:relative;z-index:2;clear:both;padding:104px 0 72px;text-align:center}
   .rb-cat-end a{display:inline-block;border:1px solid #000;color:#000;font-family:'Archivo',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;padding:13px 26px;text-decoration:none;transition:background .2s ease,color .2s ease}
   .rb-cat-end a:hover{background:#000;color:#fff}
 
@@ -30,7 +30,7 @@
     .fe-block-yui_3_17_2_1_1786355774294_4001{grid-row:1 / 4 !important}
     .fe-block-yui_3_17_2_1_1780525796775_2587{grid-row:4 / 6 !important}
     .fe-block-ea27c97067a62fafe279{grid-row:6 / 7 !important}
-    .fe-block-956b4c1507e0d3de563a{grid-row:8 / 26 !important}
+    .fe-block-956b4c1507e0d3de563a{grid-row:8 / 20 !important}
 
     /* work section: title, specs, image, concept, button each on their own rows */
     .fe-block-yui_3_17_2_1_1780529990468_6490{grid-row:6 / 12 !important}
