@@ -1,6 +1,8 @@
 <style>
 /* RB-IGREEL-2026 : Instagram reel, bottom of /projects */
-.rb-igr{font-family:'Archivo',Helvetica,Arial,sans-serif;color:#000;padding:56px 3vw 24px;box-sizing:border-box;text-align:center}
+/* no top padding of our own: the section's content-wrapper already supplies
+   ~100px desktop / ~60px mobile above the heading. Adding more reads as a hole. */
+.rb-igr{font-family:'Archivo',Helvetica,Arial,sans-serif;color:#000;padding:0 3vw 24px;box-sizing:border-box;text-align:center}
 .rb-igr *{box-sizing:border-box}
 .rb-igr h2.rb-igr-h{font-family:'Archivo',Helvetica,Arial,sans-serif !important;font-size:14px !important;line-height:1.5 !important;font-weight:400 !important;letter-spacing:.32em;text-transform:uppercase;margin:0 !important;color:#000}
 .rb-igr-rule{width:32px;height:1px;background:#000;margin:18px auto 34px}
@@ -17,7 +19,7 @@
    of white under the hairline rule on desktop */
 .fluid-engine:has(.rbp){grid-template-rows:auto !important;}
 @media(max-width:767px){
-  .rb-igr{padding:40px 6vw 16px}
+  .rb-igr{padding:0 6vw 16px}
   .rb-igr-frame iframe{height:637px}
 }
 </style>
