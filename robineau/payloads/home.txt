@@ -1,5 +1,9 @@
-﻿<style>
-  /* RB-HOME-V12 : Kiaf countdown + what we do */
+
+  
+    
+  
+    <style>
+  /* RB-HOME-V13 : Kiaf countdown + what we do */
   .fluid-engine:has(.rb-wrap){grid-template-rows:auto !important;}
   .fluid-engine .fe-block:has(.rb-wrap){grid-column:1 / -1 !important;grid-row:1 / -1 !important;}
   .rb-wrap{font-family:'Archivo',Helvetica,Arial,sans-serif;color:#000;max-width:none;margin:0;padding:0 3vw;box-sizing:border-box}
@@ -95,7 +99,7 @@
       </a>
 
       <a class="rb-card" href="/education">
-        <div class="rb-card-img"><img src="https://static1.squarespace.com/static/67c76cbfe79cd7298244d5d3/t/6a7bb5dbccbf2e287f78e00b/1786492380450/valentina-education.jpg" alt="Education"></div>
+        <div class="rb-card-img"><img src="https://cdn.jsdelivr.net/gh/FutureNYX/video-assets@main/robineau/education-app-mockup.jpg" alt="Education"></div>
         <h3>Education</h3>
         <p>Professional training for artists, live now with Valentina. A course for collectors to have conviction navigating the art market and their own taste coming soon.</p>
         <span class="rb-btn">Learn more</span>
@@ -108,7 +112,7 @@
         <span class="rb-btn">Learn more</span>
       </a>
 
-      <a class="rb-card" href="/art-expert">
+      <a class="rb-card" href="/art-pop-ups">
         <div class="rb-card-img"><img src="https://static1.squarespace.com/static/67c76cbfe79cd7298244d5d3/t/6a7dcc2ac40a8a6a4eafcb4a/1786629162617/artexpert-popup.jpg" alt="Art Pop-Ups"></div>
         <h3>Art Pop-Ups</h3>
         <p>Temporary shows placed where audiences already are. We take work outside the gallery and into the city, most recently at DEPO with Art Expert.</p>
