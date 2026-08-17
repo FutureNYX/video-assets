@@ -1,4 +1,6 @@
-<style>
+
+  
+    <style>
   /* RB-EDU-V4 : close desktop gap, new For Artists portrait */
   .fluid-engine:has(.rbp){grid-template-rows:auto !important;}
   .fluid-engine .fe-block:has(.rbp){grid-column:1 / -1 !important;grid-row:1 / -1 !important;}
@@ -69,7 +71,7 @@
   </section>
 
   <section class="rbp-row rbp-flip">
-    <div class="rbp-img"><img src="https://images.squarespace-cdn.com/content/v1/67c76cbfe79cd7298244d5d3/27ef75e6-157d-41fd-ac71-ab9761069b73/IMG_0650.WEBP?format=1200w" alt="Collector education"></div>
+    <div class="rbp-img"><img src="https://cdn.jsdelivr.net/gh/FutureNYX/video-assets@main/robineau/for-collectors-golden-ratio.jpg" alt="Golden ratio proportion study over two portrait paintings"></div>
     <div class="rbp-txt">
       <p class="rbp-eyebrow">Coming soon</p>
       <h2>For Collectors</h2>
@@ -79,3 +81,9 @@
   </section>
 
 </div>
+
+  
+  
+
+
+
