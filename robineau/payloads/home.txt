@@ -2,8 +2,12 @@
   
     
   
+    
+  
+    
+  
     <style>
-  /* RB-HOME-V13 : Kiaf countdown + what we do */
+  /* RB-HOME-V15 : Kiaf countdown + what we do */
   .fluid-engine:has(.rb-wrap){grid-template-rows:auto !important;}
   .fluid-engine .fe-block:has(.rb-wrap){grid-column:1 / -1 !important;grid-row:1 / -1 !important;}
   .rb-wrap{font-family:'Archivo',Helvetica,Arial,sans-serif;color:#000;max-width:none;margin:0;padding:0 3vw;box-sizing:border-box}
@@ -84,14 +88,14 @@
         <span class="rb-btn">Learn more</span>
       </a>
 
-      <a class="rb-card" href="/projects">
+      <a class="rb-card" href="/public-art">
         <div class="rb-card-img"><img src="https://static1.squarespace.com/static/67c76cbfe79cd7298244d5d3/t/6a7db763811fac5f51f2c361/1786623843738/idilliya-public-art.jpg" alt="Public Art"></div>
         <h3>Public Art</h3>
         <p>Commissions from developers, institutions and public space, from concept and artist selection through to fabrication and installation.</p>
         <span class="rb-btn">Learn more</span>
       </a>
 
-      <a class="rb-card" href="/new-page">
+      <a class="rb-card" href="/talks">
         <div class="rb-card-img"><img src="https://cdn.jsdelivr.net/gh/FutureNYX/video-assets@main/robineau/valentina-artrussia.jpg" alt="Public Talks"></div>
         <h3>Public Talks</h3>
         <p>Through lectures, panel discussions and talks at international art fairs, ROBINEAU contributes to the broader dialogue around contemporary art.</p>
@@ -106,7 +110,7 @@
       </a>
 
       <a class="rb-card" href="/brand-collaborations">
-        <div class="rb-card-img"><img src="https://static1.squarespace.com/static/67c76cbfe79cd7298244d5d3/t/6a7dcc385403aa5f385441d8/1786629176529/kapsula-brand-collab.jpg" alt="Brand Collaborations"></div>
+        <div class="rb-card-img"><img src="https://cdn.jsdelivr.net/gh/FutureNYX/video-assets@main/robineau/brand-collab-hug.jpg" alt="Brand Collaborations"></div>
         <h3>Brand Collaborations</h3>
         <p>We place contemporary art inside brand spaces. For Kapsula we installed work by James Jean, Nina Sechko and the Popovy Sisters across the store.</p>
         <span class="rb-btn">Learn more</span>
@@ -141,3 +145,8 @@
   tick(); setInterval(tick,1000);
 })();
 </script>
+  
+  
+
+
+
